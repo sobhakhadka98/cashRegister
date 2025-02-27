@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FD36E3F2D5FE2C000248ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E3E2D5FE2C000248ADB /* AppDelegate.swift */; };
+		4FD36E412D5FE2C000248ADB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E402D5FE2C000248ADB /* SceneDelegate.swift */; };
+		4FD36E432D5FE2C000248ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E422D5FE2C000248ADB /* ViewController.swift */; };
+		4FD36E462D5FE2C000248ADB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4FD36E452D5FE2C000248ADB /* Base */; };
+		4FD36E482D5FE2C200248ADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD36E472D5FE2C200248ADB /* Assets.xcassets */; };
+		4FD36E4B2D5FE2C200248ADB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4FD36E4A2D5FE2C200248ADB /* Base */; };
+		4FD36E562D5FE2C300248ADB /* CashRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E552D5FE2C300248ADB /* CashRegisterTests.swift */; };
+		4FD36E602D5FE2C300248ADB /* CashRegisterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E5F2D5FE2C300248ADB /* CashRegisterUITests.swift */; };
+		4FD36E622D5FE2C300248ADB /* CashRegisterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E612D5FE2C300248ADB /* CashRegisterUITestsLaunchTests.swift */; };
+		AF39AE5E2D6FC79D002AAF34 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39AE5D2D6FC79D002AAF34 /* HistoryViewController.swift */; };
+		AF8293E72D6E504500B06966 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8293E62D6E504500B06966 /* Product.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FD36E522D5FE2C300248ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD36E332D5FE2C000248ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FD36E3A2D5FE2C000248ADB;
+			remoteInfo = CashRegister;
+		};
+		4FD36E5C2D5FE2C300248ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD36E332D5FE2C000248ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FD36E3A2D5FE2C000248ADB;
+			remoteInfo = CashRegister;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FD36E3B2D5FE2C000248ADB /* CashRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD36E3E2D5FE2C000248ADB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FD36E402D5FE2C000248ADB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4FD36E422D5FE2C000248ADB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FD36E452D5FE2C000248ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FD36E472D5FE2C200248ADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FD36E4A2D5FE2C200248ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FD36E4C2D5FE2C200248ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD36E512D5FE2C300248ADB /* CashRegisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashRegisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD36E552D5FE2C300248ADB /* CashRegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashRegisterTests.swift; sourceTree = "<group>"; };
+		4FD36E5B2D5FE2C300248ADB /* CashRegisterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashRegisterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD36E5F2D5FE2C300248ADB /* CashRegisterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashRegisterUITests.swift; sourceTree = "<group>"; };
+		4FD36E612D5FE2C300248ADB /* CashRegisterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashRegisterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF39AE5D2D6FC79D002AAF34 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		AF8293E62D6E504500B06966 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FD36E382D5FE2C000248ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD36E4E2D5FE2C300248ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD36E582D5FE2C300248ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FD36E322D5FE2C000248ADB = {
+			isa = PBXGroup;
+			children = (
+				4FD36E3D2D5FE2C000248ADB /* CashRegister */,
+				4FD36E542D5FE2C300248ADB /* CashRegisterTests */,
+				4FD36E5E2D5FE2C300248ADB /* CashRegisterUITests */,
+				4FD36E3C2D5FE2C000248ADB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FD36E3C2D5FE2C000248ADB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD36E3B2D5FE2C000248ADB /* CashRegister.app */,
+				4FD36E512D5FE2C300248ADB /* CashRegisterTests.xctest */,
+				4FD36E5B2D5FE2C300248ADB /* CashRegisterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD36E3D2D5FE2C000248ADB /* CashRegister */ = {
+			isa = PBXGroup;
+			children = (
+				4FD36E3E2D5FE2C000248ADB /* AppDelegate.swift */,
+				4FD36E402D5FE2C000248ADB /* SceneDelegate.swift */,
+				4FD36E422D5FE2C000248ADB /* ViewController.swift */,
+				AF8293E62D6E504500B06966 /* Product.swift */,
+				4FD36E442D5FE2C000248ADB /* Main.storyboard */,
+				4FD36E472D5FE2C200248ADB /* Assets.xcassets */,
+				4FD36E492D5FE2C200248ADB /* LaunchScreen.storyboard */,
+				4FD36E4C2D5FE2C200248ADB /* Info.plist */,
+				AF39AE5D2D6FC79D002AAF34 /* HistoryViewController.swift */,
+			);
+			path = CashRegister;
+			sourceTree = "<group>";
+		};
+		4FD36E542D5FE2C300248ADB /* CashRegisterTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FD36E552D5FE2C300248ADB /* CashRegisterTests.swift */,
+			);
+			path = CashRegisterTests;
+			sourceTree = "<group>";
+		};
+		4FD36E5E2D5FE2C300248ADB /* CashRegisterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FD36E5F2D5FE2C300248ADB /* CashRegisterUITests.swift */,
+				4FD36E612D5FE2C300248ADB /* CashRegisterUITestsLaunchTests.swift */,
+			);
+			path = CashRegisterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FD36E3A2D5FE2C000248ADB /* CashRegister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FD36E652D5FE2C300248ADB /* Build configuration list for PBXNativeTarget "CashRegister" */;
+			buildPhases = (
+				4FD36E372D5FE2C000248ADB /* Sources */,
+				4FD36E382D5FE2C000248ADB /* Frameworks */,
+				4FD36E392D5FE2C000248ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CashRegister;
+			productName = CashRegister;
+			productReference = 4FD36E3B2D5FE2C000248ADB /* CashRegister.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FD36E502D5FE2C300248ADB /* CashRegisterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FD36E682D5FE2C300248ADB /* Build configuration list for PBXNativeTarget "CashRegisterTests" */;
+			buildPhases = (
+				4FD36E4D2D5FE2C300248ADB /* Sources */,
+				4FD36E4E2D5FE2C300248ADB /* Frameworks */,
+				4FD36E4F2D5FE2C300248ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FD36E532D5FE2C300248ADB /* PBXTargetDependency */,
+			);
+			name = CashRegisterTests;
+			productName = CashRegisterTests;
+			productReference = 4FD36E512D5FE2C300248ADB /* CashRegisterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FD36E5A2D5FE2C300248ADB /* CashRegisterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FD36E6B2D5FE2C300248ADB /* Build configuration list for PBXNativeTarget "CashRegisterUITests" */;
+			buildPhases = (
+				4FD36E572D5FE2C300248ADB /* Sources */,
+				4FD36E582D5FE2C300248ADB /* Frameworks */,
+				4FD36E592D5FE2C300248ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FD36E5D2D5FE2C300248ADB /* PBXTargetDependency */,
+			);
+			name = CashRegisterUITests;
+			productName = CashRegisterUITests;
+			productReference = 4FD36E5B2D5FE2C300248ADB /* CashRegisterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FD36E332D5FE2C000248ADB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					4FD36E3A2D5FE2C000248ADB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4FD36E502D5FE2C300248ADB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4FD36E3A2D5FE2C000248ADB;
+					};
+					4FD36E5A2D5FE2C300248ADB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4FD36E3A2D5FE2C000248ADB;
+					};
+				};
+			};
+			buildConfigurationList = 4FD36E362D5FE2C000248ADB /* Build configuration list for PBXProject "CashRegister" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FD36E322D5FE2C000248ADB;
+			productRefGroup = 4FD36E3C2D5FE2C000248ADB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FD36E3A2D5FE2C000248ADB /* CashRegister */,
+				4FD36E502D5FE2C300248ADB /* CashRegisterTests */,
+				4FD36E5A2D5FE2C300248ADB /* CashRegisterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FD36E392D5FE2C000248ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD36E482D5FE2C200248ADB /* Assets.xcassets in Resources */,
+				4FD36E4B2D5FE2C200248ADB /* Base in Resources */,
+				4FD36E462D5FE2C000248ADB /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD36E4F2D5FE2C300248ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD36E592D5FE2C300248ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FD36E372D5FE2C000248ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD36E432D5FE2C000248ADB /* ViewController.swift in Sources */,
+				AF8293E72D6E504500B06966 /* Product.swift in Sources */,
+				4FD36E3F2D5FE2C000248ADB /* AppDelegate.swift in Sources */,
+				AF39AE5E2D6FC79D002AAF34 /* HistoryViewController.swift in Sources */,
+				4FD36E412D5FE2C000248ADB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD36E4D2D5FE2C300248ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD36E562D5FE2C300248ADB /* CashRegisterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD36E572D5FE2C300248ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD36E622D5FE2C300248ADB /* CashRegisterUITestsLaunchTests.swift in Sources */,
+				4FD36E602D5FE2C300248ADB /* CashRegisterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FD36E532D5FE2C300248ADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FD36E3A2D5FE2C000248ADB /* CashRegister */;
+			targetProxy = 4FD36E522D5FE2C300248ADB /* PBXContainerItemProxy */;
+		};
+		4FD36E5D2D5FE2C300248ADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FD36E3A2D5FE2C000248ADB /* CashRegister */;
+			targetProxy = 4FD36E5C2D5FE2C300248ADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FD36E442D5FE2C000248ADB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FD36E452D5FE2C000248ADB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FD36E492D5FE2C200248ADB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FD36E4A2D5FE2C200248ADB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FD36E632D5FE2C300248ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FD36E642D5FE2C300248ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FD36E662D5FE2C300248ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CashRegister/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.CashRegister;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FD36E672D5FE2C300248ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CashRegister/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.CashRegister;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FD36E692D5FE2C300248ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.CashRegisterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CashRegister.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CashRegister";
+			};
+			name = Debug;
+		};
+		4FD36E6A2D5FE2C300248ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.CashRegisterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CashRegister.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CashRegister";
+			};
+			name = Release;
+		};
+		4FD36E6C2D5FE2C300248ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.CashRegisterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CashRegister;
+			};
+			name = Debug;
+		};
+		4FD36E6D2D5FE2C300248ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.CashRegisterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CashRegister;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FD36E362D5FE2C000248ADB /* Build configuration list for PBXProject "CashRegister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD36E632D5FE2C300248ADB /* Debug */,
+				4FD36E642D5FE2C300248ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FD36E652D5FE2C300248ADB /* Build configuration list for PBXNativeTarget "CashRegister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD36E662D5FE2C300248ADB /* Debug */,
+				4FD36E672D5FE2C300248ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FD36E682D5FE2C300248ADB /* Build configuration list for PBXNativeTarget "CashRegisterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD36E692D5FE2C300248ADB /* Debug */,
+				4FD36E6A2D5FE2C300248ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FD36E6B2D5FE2C300248ADB /* Build configuration list for PBXNativeTarget "CashRegisterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD36E6C2D5FE2C300248ADB /* Debug */,
+				4FD36E6D2D5FE2C300248ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FD36E332D5FE2C000248ADB /* Project object */;
+}
