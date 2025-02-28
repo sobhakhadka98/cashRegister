@@ -10,6 +10,8 @@ import UIKit
 class HistoryViewController: UITableViewController {
 
     var purchaseClass : PurchaseHistoryManager?
+    
+    var selectedIndex : Int = -1
 
     override func viewDidLoad() {
         
@@ -28,28 +30,36 @@ class HistoryViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return (purchaseClass?.purchaseHistoryList.count)!
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return (purchaseClass?.purchaseHistoryList.count)!
         
-        cell.textLabel?.text = purchaseClass?.purchaseHistoryList[indexPath.row].name
-        cell.detailTextLabel?.text = purchaseClass?.purchaseHistoryList[indexPath.row].quantity
-        
-        return cell
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mycell")!
+        if let goodPurchase = purchaseClass?.purchaseHistoryList[indexPath.row] {
+            cell.textLabel?.text = "\(goodPurchase.name)"
+            cell.detailTextLabel?.text = "\(goodPurchase.quantity)"
+        }
         return cell
     }
-    */
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        selectedIndex = indexPath.row
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var tableDetailVC = segue.destination as! HistoryDetailViewController
+        if let selectIndex = tableView.indexPathForSelectedRow {
+            tableDetailVC.selectedIndex = selectIndex.row
+        }
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

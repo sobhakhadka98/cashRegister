@@ -32,6 +32,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         productTable.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        productTable.reloadData()
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (productClass?.ProductList.count)!
@@ -42,10 +46,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mycell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath) as! cellTableViewCell
         if let goodProduct = productClass?.ProductList[indexPath.row] {
-            cell.textLabel?.text = "\(goodProduct.name)"
-            cell.detailTextLabel?.text = "\(goodProduct.quantity)"
+            cell.productName.text = "\(goodProduct.name)"
+            cell.quantity.text = "\(goodProduct.quantity)"
+            cell.price.text = "$\(goodProduct.pricePerItem)"
         }
         return cell
     }
@@ -60,7 +65,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func numClicked(_ sender: UIButton) {
         //check productitemprice 0 if yes throw alert
         if(productPerItemPrice == 0){
-            let alert = UIAlertController(title: "Product not selected!", message: "You Have to select a product before you enter quantity", preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: "Product not selected!", message: "You Have to select a product before you enter quantity", preferredStyle: .alert)
                             
                             alert.addAction(UIAlertAction(title: "OK", style: .default))
                             present(alert, animated: true)
@@ -75,26 +80,38 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func buyClicked(_ sender: Any) {
         //check qunatity
-        if(quantity <= 0){
-            let alert = UIAlertController(title: "Invalid Quantity", message: "Qunatity needs to be greater than 0", preferredStyle: .actionSheet)
+        if(productPerItemPrice == 0){
+            let alert = UIAlertController(title: "Product not selected!", message: "You Have to select a product before you enter quantity", preferredStyle: .alert)
+                            
+                            alert.addAction(UIAlertAction(title: "OK", style: .default))
+                            present(alert, animated: true)
+        } else if(quantity <= 0){
+            let alert = UIAlertController(title: "Invalid Quantity", message: "Qunatity needs to be greater than 0", preferredStyle: .alert)
                             
                             alert.addAction(UIAlertAction(title: "OK", style: .default))
                             present(alert, animated: true)
         } else if((productClass?.ProductList[selectedIndex].quantity)! < quantity){
-            let alert = UIAlertController(title: "Not enough products!", message: "Sorry!! We don't have enough in stock", preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: "Not enough products!", message: "Sorry!! We don't have enough in stock", preferredStyle: .alert)
                             
                             alert.addAction(UIAlertAction(title: "OK", style: .default))
                             present(alert, animated: true)
         } else {
             productClass!.ProductList[selectedIndex].quantity -= quantity
-            var newPurchase = Purchase(name: productType.text, quantity: quantity, totalPrice: productPerItemPrice*Double(quantity))
+            let newPurchase = Purchase(name: (productType?.text)!, totalPrice: productPerItemPrice*Double(quantity), quantity: quantity)
             purchaseClass?.addNewPurchase(newPurchase: newPurchase)
             productType.text = "Product Type"
             productQuantity.text = "Quantity"
             productTotalPrice.text = "Total"
+            productPerItemPrice = 0
+            quantity = 0
             productTable.reloadData()
         }
     }
     
+    @IBAction func clearQuantity(_ sender: Any) {
+        productQuantity.text = "Quantity"
+        productTotalPrice.text = "Total"
+        quantity = 0
+    }
 }
 

@@ -16,6 +16,10 @@
 		4FD36E562D5FE2C300248ADB /* CashRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E552D5FE2C300248ADB /* CashRegisterTests.swift */; };
 		4FD36E602D5FE2C300248ADB /* CashRegisterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E5F2D5FE2C300248ADB /* CashRegisterUITests.swift */; };
 		4FD36E622D5FE2C300248ADB /* CashRegisterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD36E612D5FE2C300248ADB /* CashRegisterUITestsLaunchTests.swift */; };
+		4FEDEEE22D72563B0058479A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEDEEE12D72563B0058479A /* History.swift */; };
+		4FEDEEE72D7258140058479A /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEDEEE62D7258140058479A /* HistoryDetailViewController.swift */; };
+		4FEDEEE92D7268580058479A /* RestockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEDEEE82D7268580058479A /* RestockViewController.swift */; };
+		4FEDEEEB2D727AE30058479A /* cellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEDEEEA2D727AE30058479A /* cellTableViewCell.swift */; };
 		AF39AE5E2D6FC79D002AAF34 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39AE5D2D6FC79D002AAF34 /* HistoryViewController.swift */; };
 		AF8293E72D6E504500B06966 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8293E62D6E504500B06966 /* Product.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +55,10 @@
 		4FD36E5B2D5FE2C300248ADB /* CashRegisterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashRegisterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD36E5F2D5FE2C300248ADB /* CashRegisterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashRegisterUITests.swift; sourceTree = "<group>"; };
 		4FD36E612D5FE2C300248ADB /* CashRegisterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashRegisterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FEDEEE12D72563B0058479A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		4FEDEEE62D7258140058479A /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
+		4FEDEEE82D7268580058479A /* RestockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestockViewController.swift; sourceTree = "<group>"; };
+		4FEDEEEA2D727AE30058479A /* cellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellTableViewCell.swift; sourceTree = "<group>"; };
 		AF39AE5D2D6FC79D002AAF34 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		AF8293E62D6E504500B06966 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,14 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				4FD36E3E2D5FE2C000248ADB /* AppDelegate.swift */,
+				4FEDEEE12D72563B0058479A /* History.swift */,
 				4FD36E402D5FE2C000248ADB /* SceneDelegate.swift */,
+				4FEDEEE62D7258140058479A /* HistoryDetailViewController.swift */,
 				4FD36E422D5FE2C000248ADB /* ViewController.swift */,
 				AF8293E62D6E504500B06966 /* Product.swift */,
 				4FD36E442D5FE2C000248ADB /* Main.storyboard */,
+				4FEDEEE82D7268580058479A /* RestockViewController.swift */,
 				4FD36E472D5FE2C200248ADB /* Assets.xcassets */,
 				4FD36E492D5FE2C200248ADB /* LaunchScreen.storyboard */,
 				4FD36E4C2D5FE2C200248ADB /* Info.plist */,
 				AF39AE5D2D6FC79D002AAF34 /* HistoryViewController.swift */,
+				4FEDEEEA2D727AE30058479A /* cellTableViewCell.swift */,
 			);
 			path = CashRegister;
 			sourceTree = "<group>";
@@ -201,6 +213,7 @@
 				TargetAttributes = {
 					4FD36E3A2D5FE2C000248ADB = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					4FD36E502D5FE2C300248ADB = {
 						CreatedOnToolsVersion = 15.4;
@@ -264,11 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FEDEEE92D7268580058479A /* RestockViewController.swift in Sources */,
+				4FEDEEE22D72563B0058479A /* History.swift in Sources */,
 				4FD36E432D5FE2C000248ADB /* ViewController.swift in Sources */,
 				AF8293E72D6E504500B06966 /* Product.swift in Sources */,
 				4FD36E3F2D5FE2C000248ADB /* AppDelegate.swift in Sources */,
 				AF39AE5E2D6FC79D002AAF34 /* HistoryViewController.swift in Sources */,
+				4FEDEEE72D7258140058479A /* HistoryDetailViewController.swift in Sources */,
 				4FD36E412D5FE2C000248ADB /* SceneDelegate.swift in Sources */,
+				4FEDEEEB2D727AE30058479A /* cellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -465,6 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.CashRegister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
